@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/netuno.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body onload="hover()">
+<header>
+    <div class="logo"><h1>The planets</h1></div>
+    <div class="nav-menu">
+        <ul class="menu">
+            <li><a class="nav-link mercurio" href="index.html"><div class="ball mercurio"></div> Mercurio <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link venus" href="venus.html"><div class="ball venus"></div> Venus <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link terra" href="terra.html"><div class="ball terra"></div> Terra <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link marte" href="marte.html"><div class="ball marte"></div> Marte <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link jupiter" href="jupiter.html"><div class="ball jupiter"></div> Jupiter <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link saturno" href="saturno.html"><div class="ball saturno"></div> Saturno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link urano" href="urano.html"><div class="ball urano"></div> Urano <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link netuno" href="netuno.html"><div class="ball netuno"></div> Netuno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <div onclick="mostra()" class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+<main>
+    <div class="planet-wrap">
+        <div class="planet">
+            <img class="overview" src="assets/images/planet-neptune.svg" alt="">
+            <img class="internal" src="assets/images/planet-neptune-internal.svg" alt="">
+            <div class="surface">
+                <img src="assets/images/planet-neptune.svg" alt="" class="over">
+                <img src="assets/images/geology-neptune.png" alt="" class="geo">
+            </div>
+        </div>
+        <div class="planet-content">
+            <div class="planet-info">
+                <h1>Netuno</h1>
+                <div class="paragraph-1">
+                    <p>Netuno é o oitavo planeta em relação ao sol. No Sistema Solar, é o quarto maior planeta em diâmetro, o terceiro planeta mais massivo e o planeta gigante mais denso. Tem 17 vezes a massa da Terra, mais massa do que seu quase gêmeo Urano.</p>
+                </div>
+                <div class="paragraph-2">
+                    <p>A estrutura interna de Netuno se assemelha à de Urano. Sua atmosfera forma cerca de 5% a 10% de sua massa e estende-se talvez de 10% a 20% em direção ao núcleo. Concentrações crescentes de metano, amônia e água são encontradas nas regiões mais baixas.</p>
+                </div>
+                <div class="paragraph-3">
+                    <p>A atmosfera de Netuno é 80% hidrogênio e 19% hélio. Uma pequena quantidade de metano também está presente. Existem bandas de absorção proeminentes de metano em comprimentos de onda acima de 600 nm, na porção vermelha e infravermelha do espectro.</p>
+                </div>
+                <span>Source : <a target="https://pt.wikipedia.org/wiki/Netuno_(planeta)" href="https://pt.wikipedia.org/wiki/Netuno_(planeta)">Wikipedia <img src="assets/images/icon-source.90231c68.svg" alt=""></a></span>
+            </div>
+            <div class="planet-buttons">
+                <ul>
+                    <li id="botao1" class="btn1" onclick="over()"><span class="btn1-spn">01</span>Visão geral</li>
+                    <li id="botao2" class="btn2" onclick="int()"><span class="btn2-spn">02</span>Estrutura interna</li>
+                    <li id="botao3" class="btn3" onclick="surf()"><span class="btn3-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+            <div class="planet-buttons-1">
+                <ul>
+                    <li class="btn1-1" onclick="over()"><span class="btn1-1-spn">01</span>Visão geral</li>
+                    <li class="btn2-1" onclick="int()"><span class="btn2-1-spn">02</span>Estrutura interna</li>
+                    <li class="btn3-1" onclick="surf()"><span class="btn3-1-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="planet-more">
+        <ul>
+            <li><div class="planet-more-content">
+                <span>Rotação</span>
+                <h1>16 horas</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Translação</span>
+                <h1>164,79 anos</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Raio</span>
+                <h1>24,246 km</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Temperatura média</span>
+                <h1>-199,15 °C</h1>
+            </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/netuno.js"></script>
+</body>
+</html>

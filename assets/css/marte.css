@@ -1,0 +1,75 @@
+.nav-link.marte::before{
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    background-color: var(--color-mars);
+}
+.btn1{
+    background-color: var(--color-mars);
+    color: var(--color-white);
+    border: 1px solid var(--color-mars);
+}
+
+@media(max-width:735px){
+    .nav-link.venus{
+        color: var(--color-white);
+    }
+    .nav-link.mercurio{
+        color: var(--color-white);
+    }
+    .nav-link.terra{
+        color: var(--color-white);
+    }
+    .nav-link.marte{
+        color: var(--color-mars);
+    }
+    .nav-link.jupiter{
+        color: var(--color-white);
+    }
+    .nav-link.saturno{
+        color: var(--color-white);
+    }
+    .nav-link.urano{
+        color: var(--color-white);
+    }
+    .nav-link.netuno{
+        color: var(--color-white);
+    }
+}
+
+.btn1-1{
+    border-bottom: 4px solid var(--color-mars);
+}
+
+@media(max-width:570px){
+    .planet{
+        width: 70vw;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .surface .over{
+        width: 100%;
+    }
+    .surface .geo{
+        width: 24vw;
+    }
+}
+@media(max-width:400px){
+    body{
+        font-size: 13px;
+    }
+    .surface .over{
+        width: 18.1rem;
+    }
+    .surface .geo{
+        width: 6.1rem;
+    }
+    .planet-more-content h1{
+        font-size: 1.5em;
+    }
+}
+@media(max-width:375px){
+    .planet-buttons-1 ul{
+        padding: 0rem;
+    }
+}

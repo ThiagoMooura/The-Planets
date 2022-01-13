@@ -1,0 +1,94 @@
+:root {
+    --color-white: #fff;
+    --color-black: #070722;
+    --color-dark-grey: #37374e;
+    --color-light-grey: #838391;
+    --color-mercury: #419db9;
+    --color-venus: #eda44a;
+    --color-earth: #6f2ed6;
+    --color-mars: #d14e33;
+    --color-jupiter: #d93b36;
+    --color-saturn: #cb5020;
+    --color-uranus: #1ec2a4;
+    --color-neptune: #2d68f0;
+    --ff-spartan: "Spartan",sans-serif;
+    --ff-antonio: "Antonio",sans-serif;
+    --ff-base-size: 14px;
+    --button-hover: #313148;
+}
+.nav-link.venus::before{
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    background-color: var(--color-venus);
+}
+.btn1{
+    background-color: var(--color-venus);
+    color: var(--color-white);
+    border: 1px solid var(--color-venus);
+}
+
+@media(max-width:735px){
+    .nav-link.venus{
+        color: var(--color-venus);
+    }
+    .nav-link.mercurio{
+        color: var(--color-white);
+    }
+    .nav-link.terra{
+        color: var(--color-white);
+    }
+    .nav-link.marte{
+        color: var(--color-white);
+    }
+    .nav-link.jupiter{
+        color: var(--color-white);
+    }
+    .nav-link.saturno{
+        color: var(--color-white);
+    }
+    .nav-link.urano{
+        color: var(--color-white);
+    }
+    .nav-link.netuno{
+        color: var(--color-white);
+    }
+}
+
+.btn1-1{
+    border-bottom: 4px solid var(--color-venus);
+}
+
+
+@media(max-width:570px){
+    .planet{
+        width: 70vw;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .surface .over{
+        width: 100%;
+    }
+    .surface .geo{
+        width: 24vw;
+    }
+}
+@media(max-width:400px){
+    body{
+        font-size: 13px;
+    }
+    .surface .over{
+        width: 18.1rem;
+    }
+    .surface .geo{
+        width: 6.1rem;
+    }
+    .planet-more-content h1{
+        font-size: 1.5em;
+    }
+}
+@media(max-width:375px){
+    .planet-buttons-1 ul{
+        padding: 0rem;
+    }
+}

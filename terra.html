@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/terra.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body onload="hover()">
+<header>
+    <div class="logo"><h1>The planets</h1></div>
+    <div class="nav-menu">
+        <ul class="menu">
+            <li><a class="nav-link mercurio" href="index.html"><div class="ball mercurio"></div> Mercúrio <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link venus" href="venus.html"><div class="ball venus"></div> Vênus <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link terra" href="terra.html"><div class="ball terra"></div> Terra <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link marte" href="marte.html"><div class="ball marte"></div> Marte <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link jupiter" href="jupiter.html"><div class="ball jupiter"></div> Jupiter <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link saturno" href="saturno.html"><div class="ball saturno"></div> Saturno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link urano" href="urano.html"><div class="ball urano"></div> Urano <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link netuno" href="netuno.html"><div class="ball netuno"></div> Netuno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <div onclick="mostra()" class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+<main>
+    <div class="planet-wrap">
+        <div class="planet">
+            <img class="overview" src="assets/images/planet-earth.svg" alt="">
+            <img class="internal" src="assets/images/planet-earth-internal.svg" alt="">
+            <div class="surface">
+                <img src="assets/images/planet-earth.svg" alt="" class="over">
+                <img src="assets/images/geology-earth.png" alt="" class="geo">
+            </div>
+        </div>
+        <div class="planet-content">
+            <div class="planet-info">
+                <h1>Terra</h1>
+                <div class="paragraph-1">
+                    <p>Terra é o terceiro planeta em relação ao sol e o unico planeta habitável. Cerca de 70,8% de sua superficie é água e os 29,2% restantes é coberto por terra. A distância entre a Terra e o Sol permitiu a vida evoluir e prosperar.</p>
+                </div>
+                <div class="paragraph-2">
+                    <p>O interior da Terra, como o dos outros planetas terrestres, é dividido em camadas por suas propriedades químicas ou físicas (reológicas). A camada externa é uma crosta sólida de silicato quimicamente distinta, que é sustentada por um manto sólido altamente viscoso.</p>
+                </div>
+                <div class="paragraph-3">
+                    <p>A área total da superfície da Terra é de cerca de 510 milhões de km². A crosta continental é composta por materiais de menor densidade, como as rochas ígneas, granito e andesito. Menos comum é o basalto, uma rocha vulcânica mais densa que é o principal componente do fundo do oceano.</p>
+                </div>
+                <span>Source : <a target="https://en.wikipedia.org/wiki/Earth" href="https://en.wikipedia.org/wiki/Earth">Wikipedia <img src="assets/images/icon-source.90231c68.svg" alt=""></a></span>
+            </div>
+            <div class="planet-buttons">
+                <ul>
+                    <li id="botao1" class="btn1" onclick="over()"><span class="btn1-spn">01</span>Visão geral</li>
+                    <li id="botao2" class="btn2" onclick="int()"><span class="btn2-spn">02</span>Estrutura interna</li>
+                    <li id="botao3" class="btn3" onclick="surf()"><span class="btn3-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+            <div class="planet-buttons-1">
+                <ul>
+                    <li class="btn1-1" onclick="over()"><span class="btn1-1-spn">01</span>Visão geral</li>
+                    <li class="btn2-1" onclick="int()"><span class="btn2-1-spn">02</span>Estrutura interna</li>
+                    <li class="btn3-1" onclick="surf()"><span class="btn3-1-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="planet-more">
+        <ul>
+            <li><div class="planet-more-content">
+                <span>rotação</span>
+                <h1>0,99 dias</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Translação</span>
+                <h1>365,26 dias</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Raio</span>
+                <h1>6.371 km</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Temperatura média</span>
+                <h1>16 °C</h1>
+            </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/terra.js"></script>
+</body>
+</html>

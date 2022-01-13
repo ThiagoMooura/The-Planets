@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/venus.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body onload="hover()">
+<header>
+    <div class="logo"><h1>The planets</h1></div>
+    <div class="nav-menu">
+        <ul class="menu">
+            <li><a class="nav-link mercurio" href="index.html"><div class="ball mercurio"></div> Mercúrio <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link venus" href="venus.html"><div class="ball venus"></div> Vênus <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link terra" href="terra.html"><div class="ball terra"></div> Terra <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link marte" href="marte.html"><div class="ball marte"></div> Marte <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link jupiter" href="jupiter.html"><div class="ball jupiter"></div> Jupiter <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link saturno" href="saturno.html"><div class="ball saturno"></div> Saturno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link urano" href="urano.html"><div class="ball urano"></div> Urano <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+            <li><a class="nav-link netuno" href="netuno.html"><div class="ball netuno"></div> Netuno <img src="assets/images/icon-chevron.8915cee9.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <div onclick="mostra()" class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+<main>
+    <div class="planet-wrap">
+        <div class="planet">
+            <img class="overview" src="assets/images/planet-venus.svg" alt="">
+            <img class="internal" src="assets/images/planet-venus-internal.svg" alt="">
+            <div class="surface">
+                <img src="assets/images/planet-venus.svg" alt="" class="over">
+                <img src="assets/images/geology-venus.png" alt="" class="geo">
+            </div>
+        </div>
+        <div class="planet-content">
+            <div class="planet-info">
+                <h1>Vênus</h1>
+                <div class="paragraph-1">
+                    <p>Vênus é o segundo planeta em relação ao sol, tem o mesmo nome da deusa romana do amor e da beleza. Vênus é o segundo objeto natural mais brilhante do céu noturno, o primeiro é a Lua. Vênus pode projetar sombras e em raras ocasiões pode ser visivel a olho nu em plena luz do dia.</p>
+                </div>
+                <div class="paragraph-2">
+                    <p>A semelhança em tamanho e densidade entre Vênus e a Terra sugere que eles compartilham uma estrutura interna semelhante: um núcleo, manto e crosta. Como o da Terra, o núcleo de Vênus é provavelmente pelo menos parcialmente líquido, porque os dois planetas estão esfriando aproximadamente na mesma taxa.</p>
+                </div>
+                <div class="paragraph-3">
+                    <p>Grande parte da superfície de Vênus parece ter sido moldada por atividade vulcânica. Vênus tem muito mais vulcões do que a Terra, 167 deles possuem mais de 100 km de diâmetro. O único complexo vulcânico desse tamanho na Terra é a ilha Havaí.</p>
+                </div>
+                <span>Source : <a target="https://pt.wikipedia.org/wiki/V%C3%A9nus_(planeta)" href="https://pt.wikipedia.org/wiki/V%C3%A9nus_(planeta)">Wikipedia <img src="assets/images/icon-source.90231c68.svg" alt=""></a></span>
+            </div>
+            <div class="planet-buttons">
+                <ul>
+                    <li id="botao1" class="btn1" onclick="over()"><span class="btn1-spn">01</span>Visão geral</li>
+                    <li id="botao2" class="btn2" onclick="int()"><span class="btn2-spn">02</span>Estrutura interna</li>
+                    <li id="botao3" class="btn3" onclick="surf()"><span class="btn3-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+            <div class="planet-buttons-1">
+                <ul>
+                    <li class="btn1-1" onclick="over()"><span class="btn1-1-spn">01</span>Visão geral</li>
+                    <li class="btn2-1" onclick="int()"><span class="btn2-1-spn">02</span>Estrutura interna</li>
+                    <li class="btn3-1" onclick="surf()"><span class="btn3-1-spn">03</span>Superfície</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="planet-more">
+        <ul>
+            <li><div class="planet-more-content">
+                <span>rotação</span>
+                <h1>243 dias</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Translação</span>
+                <h1>224,7 dias</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Raio</span>
+                <h1>6.051 km</h1>
+            </div>
+            </li>
+            <li><div class="planet-more-content">
+                <span>Temperatura média</span>
+                <h1>471 °C</h1>
+            </div>
+            </li>
+        </ul>
+    </div>
+</main>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/venus.js"></script>
+</body>
+</html>
